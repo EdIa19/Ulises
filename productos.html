@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Tienda de Fútbol</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #C6FFDD;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        .productos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .producto {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .producto img {
+            max-width: 100%;
+            height: auto;
+        }
+        .producto {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+}
+
+.producto.expanded {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+
+        footer {
+            background: #C6FFDD;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Tienda de Fútbol</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Nuestros Productos</h2>
+        <div class="productos-grid">
+            <div class="producto">
+                <img src="https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/4c30a87ef62847a7b992073fa67da6a9_9366/minibalon-ile-de-foot-24.jpg" alt="Balón de Fútbol">
+                <h3>Balón de Fútbol</h3>
+                <p>El mejor balón para tus entrenamientos y partidos.</p>
+            </div>
+            <div class="producto">
+                <img src="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwiK9_KO29KGAxWFhsIIHXckCNcYABAJGgJqZg&gclid=CjwKCAjwyJqzBhBaEiwAWDRJVBXtF-Br2mZ2CLXjYBc63pnssV84RHVEwnBgpan9SzMUP1ur9bKL_BoC-h8QAvD_BwE&ohost=www.google.com&cid=CAESV-D2dBocxU22CF_cyskJ9eIFfKQxZ7TC5nQoMD8uGtpkv6eJOrD9a_SDqMZFW-j_iCOgH8_mOEn8fyNZNO2WSiBLz_x4uGn4lMjX00ZxxHUMTsEY6G7pug&sig=AOD64_0PEa1KtQ46F9JKwOs7_6neU4Dzfg&ctype=5&q=&ved=2ahUKEwjQt-6O29KGAxW6LdAFHdvBC_AQwg8oAXoECAUQHQ&adurl=" alt="Botines de Fútbol">
+                <h3>Botines de Fútbol</h3>
+                <p>Calzado cómodo y de alta calidad para jugadores profesionales y amateurs.</p>
+            </div>
+            <div class="producto">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTieCrSw0iRanOblvNXQxMujr_bFeP3_HjYTcYQy7ESvT09CXKv5lTz0oLZ7uzX0nXLBnUw-RJCMKPu6SJicThBKlgAw2Z3BJc7frCoQbLaQgw5Re7Wg9s1PpcNe0ZVrM-PTNyiCGYQ-w&usqp=CAc" alt="Camiseta de Equipo">
+                <h3>Camisetas de Equipos</h3>
+                <p>Consigue las camisetas de tus equipos favoritos.</p>
+            </div>
+            <div class="producto">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQjoT6uzP8bNNwvEqiaXNHZTnkFfNI2UqS7SPrvgiiWKDhVnRACmRwARxD-1ns9dsz0uwC1BlpvKExdsjgAP0LdnNXBM_JkqyNcIzKQPjrwl2o0UWFPqUWz8vawOqeXsWbApwoejOZyARQ&usqp=CAc" alt="Guantes de Portero">
+                <h3>Guantes de Portero</h3>
+                <p>Protección y agarre para los porteros más exigentes.</p>
+            </div>
+            <div class="producto">
+                <img src="https://assets.adidas.com/images/w_383,h_383,f_auto,q_auto,fl_lossy,c_fill,g_auto/e7f215ed5dba46a78495d2ed86fe3ab2_9366/espinilleras-tiro-league.jpg" alt="Espinilleras">
+                <h3>Espinilleras</h3>
+                <p>Protección completa para tus piernas durante el juego.</p>
+            </div>
+            
+            <div class="producto">
+            <img src="data:image/webp;base64,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" alt="Medias de Fútbol">
+            <h3>Medias de Fútbol</h3>
+            <p>Comodidad y estilo en cada partido.</p>
+        </div>
+        <div class="producto">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRvhbLdguZKV--79XB8-sA_XjJ8ET40dSMaX7zMElnEe9LGMnMidlmzWSMJUQiJcYtjhtld-4ZCHf8L_slvpBzx1hs3MLoW9Q2NXLKNtz5dohC9KeS6P_gHjmlc9XzZpamVCr8AG6Md29s&usqp=CAc" alt="Conos de Entrenamiento">
+            <h3>Conos de Entrenamiento</h3>
+            <p>Para entrenamientos de agilidad y precisión.</p>
+        </div>
+        <div class="producto">
+            <img src="https://www.google.com/url?url=https://www.amazon.com.mx/Aoneky-para-Porter%25C3%25ADa-F%25C3%25BAtbol-Grande/dp/B07S6M731S%3Fsource%3Dps-sl-shoppingads-lpcontext%26ref_%3Dfplfs%26psc%3D1%26smid%3DA1GJ3S8BRQ7SC4&rct=j&q=&esrc=s&opi=95576897&sa=U&ved=0ahUKEwiOtOja29KGAxUtJUQIHY72Ae8Q1SkIzwcoAA&usg=AOvVaw0gu9sHhlyqwFq-Qfc8D2Ap" alt="Redes de Fútbol">
+            <h3>Redes de Fútbol</h3>
+            <p>Resistentes y duraderas para tus porterías.</p>
+        </div>
+        <div class="producto">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR7EXdLVEm1Qi0pCKjFkTb64NfQU8hyIzK-mKVO_R8RoSayhaoOat1wZaL3DBzVrae9gejX3LV-iBr2aSm4ytuqtODlPTSOGAR3-iIIxZjfdFfm4vSzFf7rDw&usqp=CAE" alt="Peto de Entrenamiento">
+            <h3>Petos de Entrenamiento</h3>
+            <p>Identificación clara en los entrenamientos.</p>
+        </div>
+        <div class="producto">
+            <img src="https://www.google.com/url?url=https://www.scoregol.com/porterias-futbol/porterias-futbol-profesionales%3Fsrsltid%3DAfmBOoo3aVYkd1wY0TKMajDOv8zC_A-Gq5MHYHKuZCA2qZhOqeTjuTix9EE&rct=j&q=&esrc=s&opi=95576897&sa=U&ved=0ahUKEwiSttX529KGAxUeiO4BHfLKB9AQ1SkIswgoAA&usg=AOvVaw3Q9Ij_szL8NRT6C3zfWiPg" alt="Porterías de Fútbol">
+            <h3>Porterías de Fútbol</h3>
+            <p>Porterías de alta calidad para todos los niveles.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Fútbol. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+     document.querySelectorAll('.producto').forEach(product => {
+            product.addEventListener('click', () => {
+                product.classList.toggle('expanded');
+            });
+        });
+    </script>
+    
+</body>
+</html>
